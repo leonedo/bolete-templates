@@ -4087,13 +4087,13 @@
     },
     {
       "tm": 60,
-      "cm": "name:loop\r\nloopDelay: 50\r\nloopExternal: false",
+      "cm": "loop",
       "dr": 110
     },
     {
       "tm": 174.000007087165,
       "cm": "stop",
-      "dr": 50
+      "dr": 25
     }
   ]
 }
