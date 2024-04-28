@@ -67,8 +67,8 @@
       "ddd": 0,
       "ind": 1,
       "ty": 5,
-      "nm": ".t3",
-      "cl": "t3",
+      "nm": ".pick3",
+      "cl": "pick3",
       "parent": 29,
       "sr": 1,
       "ks": {
@@ -160,8 +160,8 @@
       "ddd": 0,
       "ind": 2,
       "ty": 5,
-      "nm": ".t4",
-      "cl": "t4",
+      "nm": ".bolet_1",
+      "cl": "bolet_1",
       "parent": 39,
       "sr": 1,
       "ks": {
@@ -253,8 +253,8 @@
       "ddd": 0,
       "ind": 3,
       "ty": 5,
-      "nm": ".t5",
-      "cl": "t5",
+      "nm": ".bolet_2",
+      "cl": "bolet_2",
       "parent": 40,
       "sr": 1,
       "ks": {
@@ -346,8 +346,8 @@
       "ddd": 0,
       "ind": 4,
       "ty": 5,
-      "nm": ".t6",
-      "cl": "t6",
+      "nm": ".bolet_3",
+      "cl": "bolet_3",
       "parent": 41,
       "sr": 1,
       "ks": {
@@ -439,8 +439,8 @@
       "ddd": 0,
       "ind": 5,
       "ty": 5,
-      "nm": ".t7",
-      "cl": "t7",
+      "nm": ".pick4_1",
+      "cl": "pick4_1",
       "parent": 31,
       "sr": 1,
       "ks": {
@@ -532,8 +532,8 @@
       "ddd": 0,
       "ind": 6,
       "ty": 5,
-      "nm": ".t8",
-      "cl": "t8",
+      "nm": ".pick4_2",
+      "cl": "pick4_2",
       "parent": 30,
       "sr": 1,
       "ks": {
@@ -625,8 +625,8 @@
       "ddd": 0,
       "ind": 7,
       "ty": 5,
-      "nm": ".t9",
-      "cl": "t9",
+      "nm": ".pick4_3",
+      "cl": "pick4_3",
       "parent": 28,
       "sr": 1,
       "ks": {
@@ -718,8 +718,8 @@
       "ddd": 0,
       "ind": 8,
       "ty": 5,
-      "nm": ".t10",
-      "cl": "t10",
+      "nm": ".1pick5_1",
+      "cl": "pick5_1",
       "parent": 36,
       "sr": 1,
       "ks": {
@@ -811,8 +811,8 @@
       "ddd": 0,
       "ind": 9,
       "ty": 5,
-      "nm": ".t11",
-      "cl": "t11",
+      "nm": ".pick5_2",
+      "cl": "pick5_2",
       "parent": 35,
       "sr": 1,
       "ks": {
@@ -904,8 +904,8 @@
       "ddd": 0,
       "ind": 10,
       "ty": 5,
-      "nm": ".t12",
-      "cl": "t12",
+      "nm": ".pick5_3",
+      "cl": "pick5_3",
       "parent": 34,
       "sr": 1,
       "ks": {
@@ -997,8 +997,8 @@
       "ddd": 0,
       "ind": 11,
       "ty": 5,
-      "nm": ".t13",
-      "cl": "t13",
+      "nm": ".sorteo",
+      "cl": "sorteo",
       "sr": 1,
       "ks": {
         "o": {
@@ -1089,8 +1089,8 @@
       "ddd": 0,
       "ind": 12,
       "ty": 5,
-      "nm": ".t14",
-      "cl": "t14",
+      "nm": ".fecha",
+      "cl": "fecha",
       "sr": 1,
       "ks": {
         "o": {

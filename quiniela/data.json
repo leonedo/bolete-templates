@@ -2237,8 +2237,8 @@
       "ddd": 0,
       "ind": 10,
       "ty": 5,
-      "nm": ".t0",
-      "cl": "t0",
+      "nm": ".bolet_1",
+      "cl": "bolet_1",
       "parent": 16,
       "sr": 1,
       "ks": {
@@ -2291,7 +2291,7 @@
               "s": {
                 "s": 44,
                 "f": "Montserrat-BoldItalic",
-                "t": "35",
+                "t": "  ",
                 "ca": 0,
                 "j": 2,
                 "tr": 25,
@@ -2330,8 +2330,8 @@
       "ddd": 0,
       "ind": 11,
       "ty": 5,
-      "nm": ".t1",
-      "cl": "t1",
+      "nm": ".bolet_2",
+      "cl": "bolet_2",
       "parent": 15,
       "sr": 1,
       "ks": {
@@ -2384,7 +2384,7 @@
               "s": {
                 "s": 44,
                 "f": "Montserrat-BoldItalic",
-                "t": "27",
+                "t": "  ",
                 "ca": 0,
                 "j": 2,
                 "tr": 25,
@@ -2423,8 +2423,8 @@
       "ddd": 0,
       "ind": 12,
       "ty": 5,
-      "nm": ".t2",
-      "cl": "t2",
+      "nm": ".bolet_3",
+      "cl": "bolet_3",
       "parent": 14,
       "sr": 1,
       "ks": {
@@ -2477,7 +2477,7 @@
               "s": {
                 "s": 44,
                 "f": "Montserrat-BoldItalic",
-                "t": "89",
+                "t": "  ",
                 "ca": 0,
                 "j": 2,
                 "tr": 25,
