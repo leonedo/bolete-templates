@@ -307,7 +307,7 @@ webcg.on('stop', function () {
     console.log('stop')
     clearTimeout(loopRepeat);
     loopAnimation = false;
-    nextAnimation = 'stop'
+   
 
     anim.goToAndPlay('stop', true)
     isOn = false
