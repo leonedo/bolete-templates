@@ -114,6 +114,7 @@ const makeAnimPromise = () => {
             anim.addEventListener('DOMLoaded', function (e) {
                 animLoaded = true;
                 resolve('Animation ready to play')
+                currentTime();
             });
         }
     })
@@ -347,7 +348,6 @@ anim.addEventListener('complete', () => {
 
 //casparcg control
 webcg.on('play', function () {
-    currentTime();
     animPromise.then((resolve) => {
         console.log('play')
         anim.goToAndPlay('play', true);
@@ -363,23 +363,10 @@ webcg.on('stop', function () {
     console.log('stop')
     clearTimeout(loopRepeat);
     loopAnimation = false;
-    nextAnimation = 'stop'
+  
 
     anim.goToAndPlay('stop', true)
     isOn = false
-
-    // if (anim.isPaused) {
-    //     if (!loopExternal) {
-    //         anim.goToAndPlay('stop', true)
-    //         isOn = false
-    //     }
-
-    //     if (loopExits && loopExternal && externalLoop.isPaused) {
-    //         externalLoop.goToAndPlay('stop', true);
-    //         anim.goToAndPlay('stop', true)
-    //         isOn = false
-    //     }
-    // }
 
 });
 
