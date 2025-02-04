@@ -54,7 +54,14 @@ function currentTime() {
     var animElement = anim.renderer.elements[1];
     animElement.updateDocumentData({
         t: hour + ":" + min + " " + midday }, 0); // Update the text y coloreamos Rojo
+    
+    var animElement2 = anim.renderer.elements[2];
+    animElement2.updateDocumentData({
+        t: formatter.format(new Date()) }, 0);
+         // Fecha en el grafico
+  
     var t = setTimeout(function(){ currentTime() }, 1000); /* setting timer */
+
   }
   
   function updateTime(k) {
@@ -256,7 +263,7 @@ webcg.on('data', function (data) {
             console.log(resolve)
 
             setTimeout(() => {
-                data["fecha"] = formatter.format(new Date())  // Fecha en el grafico
+                
                 for (let i = 0; i < animElementsLength; i++) {
                     var animElement = anim.renderer.elements[i];
                     if (
