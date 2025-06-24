@@ -40,7 +40,7 @@ const loadAnimation = (data, container) => {
     });
 }
 
-let anim = loadAnimation('data.json', animContainer)
+let anim = loadAnimation('recap.json', animContainer)
 let externalLoop;
 
 //add font-face from data.json  

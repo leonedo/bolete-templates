@@ -348,7 +348,6 @@ anim.addEventListener('complete', () => {
 
 //casparcg control
 webcg.on('play', function () {
-    
     animPromise.then((resolve) => {
         console.log('play')
         anim.goToAndPlay('play', true);
@@ -368,8 +367,6 @@ webcg.on('stop', function () {
 
     anim.goToAndPlay('stop', true)
     isOn = false
-
-    
 
 });
 
