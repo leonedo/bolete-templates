@@ -329,7 +329,7 @@
               "s": {
                 "s": 44,
                 "f": "HelveticaNeueLTPro-MdCn",
-                "t": "NIMEWO TIRAJ 0381-2",
+                "t": "",
                 "ca": 1,
                 "j": 2,
                 "tr": 0,
@@ -451,7 +451,7 @@
               "s": {
                 "s": 44,
                 "f": "HelveticaNeueLTPro-Cn",
-                "t": "22/05/2026",
+                "t": "",
                 "ca": 1,
                 "j": 2,
                 "tr": 25,
@@ -573,7 +573,7 @@
               "s": {
                 "s": 44,
                 "f": "HelveticaNeueLTPro-Cn",
-                "t": "10 H 30 AM",
+                "t": "",
                 "ca": 1,
                 "j": 2,
                 "tr": 25,
@@ -819,7 +819,7 @@
                 "ps":[-35,-30],
                 "s": 34,
                 "f": "Montserrat-Bold",
-                "t": "35",
+                "t": "",
                 "ca": 0,
                 "j": 2,
                 "tr": 0,
@@ -941,7 +941,7 @@
               "s": {
                 "s": 44,
                 "f": "Montserrat-Bold",
-                "t": "1era",
+                "t": "",
                 "ca": 0,
                 "j": 2,
                 "tr": 25,
