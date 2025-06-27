@@ -38,43 +38,57 @@ const formatter = new Intl.DateTimeFormat('fr', {
    // day: "numeric"
 });
 
-function currentTime() {
-   
-    var date = new Date(); /* creating object of Date class */
-    var hour = date.getHours();
-    var min = date.getMinutes();
-    var sec = date.getSeconds();
-    var midday = "AM";
-    midday = (hour >= 12) ? "PM" : "AM"; /* assigning AM/PM */
-    hour = (hour == 0) ? 12 : ((hour > 12) ? (hour - 12): hour); /* assigning hour in 12-hour format */
-    hour = updateTime(hour);
-    min = updateTime(min);
-    sec = updateTime(sec);
-    
-    var animElement = anim.renderer.elements[1];
-    animElement.updateDocumentData({
-        t: hour + ":" + min + " " + midday }, 0); // Update the text y coloreamos Rojo
-    
-    var animElement2 = anim.renderer.elements[2];
-    animElement2.updateDocumentData({
-        t: formatter.format(new Date()) }, 0);
-         // Fecha en el grafico
-  
-    var t = setTimeout(function(){ currentTime() }, 1000); /* setting timer */
+function updateTime(unit) {
+    return unit < 10 ? "0" + unit : unit;
+}
 
-  }
-  
-  function updateTime(k) {
-    if (k < 10) {
-      return "0" + k;
+function currentTime() {
+    const date = new Date();
+    let hour = date.getHours();
+    let min = updateTime(date.getMinutes());
+    let sec = updateTime(date.getSeconds());
+    const midday = hour >= 12 ? "PM" : "AM";
+    hour = hour % 12 || 12;
+    hour = updateTime(hour);
+
+    const timeString = `${hour}:${min} ${midday}`;
+
+    const elements = anim.renderer.elements;
+    const targetClass = "t0";
+
+    const target = elements.find(el => el.data && el.data.cl === targetClass);
+
+    if (target) {
+        target.updateDocumentData({ t: timeString }, 0);
+    } else {
+        console.warn(`Text element with class "${targetClass}" not found.`);
     }
-    else {
-      return k;
-    }
-  }
+
+    setTimeout(currentTime, 1000);
+}
   
    /* calling currentTime() function to initiate the process */
+function currentDate() {
+   const date = new Date();
 
+    const day = String(date.getDate()).padStart(2, '0');
+    const month = String(date.getMonth() + 1).padStart(2, '0'); // Months are 0-indexed
+    const year = date.getFullYear();
+
+    const timeString = `${day}/${month}/${year}`;
+
+
+    const elements = anim.renderer.elements;
+    const targetClass = "t1";
+
+    const target = elements.find(el => el.data && el.data.cl === targetClass);
+
+    if (target) {
+        target.updateDocumentData({ t: timeString }, 0);
+    } else {
+        console.warn(`Text element with class "${targetClass}" not found.`);
+    }
+}
 
 
 
@@ -89,7 +103,7 @@ const loadAnimation = (data, container) => {
     });
 }
 
-let anim = loadAnimation('data.json', animContainer)
+let anim = loadAnimation('logo2.json', animContainer)
 let externalLoop;
 
 //add font-face from data.json  
@@ -115,6 +129,7 @@ const makeAnimPromise = () => {
                 animLoaded = true;
                 resolve('Animation ready to play')
                 currentTime();
+                currentDate();
             });
         }
     })
